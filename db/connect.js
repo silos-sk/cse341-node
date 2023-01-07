@@ -1,28 +1,32 @@
-const { MongoClient } = require('mongodb');
+const dotenv = require('dotenv');
+dotenv.config();
+const MongoClient = require('mongodb').MongoClient;
 
-async function main(){
-    const uri= "mongodb+srv://dbUser:dbUserpw@cluster0.enornqg.mongodb.net/?retryWrites=true&w=majority"
+let _db;
 
-    const client = new MongoClient(uri);
-
-    try{
-        await client.connect();
-
-        await listDatabases(client)
-    } catch (e){
-        console.error(e);
-    } finally {
-        await client.close();
-    }
-    
-}
-
-main().catch(console.error);
-
-async function listDatabases(client){
-    const databasesList = await client.db().admin().listDatabases('cluster0');
-    console.log("Databases");
-    databasesList.databases.forEach(db =>{
-        console.log(`- ${db.name}`);
+const accessDb = (callback) => {
+  if (_db) {
+    console.log('Db is already initialized!');
+    return callback(null, _db);
+  }
+  MongoClient.connect(process.env.URI)
+    .then((client) => {
+      _db = client;
+      callback(null, _db);
     })
-}
+    .catch((err) => {
+      callback(err);
+    });
+};
+
+const getDb = () => {
+  if (!_db) {
+    throw Error('Db not initialized');
+  }
+  return _db;
+};
+
+module.exports = {
+  accessDb,
+  getDb,
+};

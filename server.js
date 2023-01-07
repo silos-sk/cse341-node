@@ -1,9 +1,25 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongodb = require('./db/connect');
+const dotenv = require('dotenv');
+dotenv.config();
 
-app.use('/', require('./routes'))
+const port = process.env.PORT || 8080;
+const app = express();
 
-app.listen(port, ()=> {
-    console.log(`Example app listening on port ${port}`)
-})
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
+  .use('/', require('./routes'));
+
+mongodb.accessDb((err, mongodb) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+    console.log(`Connected to DB and listening on ${port}`);
+  }
+});
