@@ -2,7 +2,7 @@ const mongodb = require('../db/connect');
 
 displayName = (req, res) => {
     const data =
-      'Ella Marce';
+      'Granta Park';
     res.status(200).send(data);
   };
 
