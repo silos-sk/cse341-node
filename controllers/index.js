@@ -8,5 +8,5 @@ displayName = (req, res) => {
 
 
   module.exports = {
-    displayName, getData
+    displayName
   };
