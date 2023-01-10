@@ -1,3 +1,6 @@
+// Contacts App | Shaira Silos
+// Lesson 01 to Lesson 02 Personal Assignment
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
