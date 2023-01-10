@@ -76,7 +76,7 @@ const removeDoc = async (req, res) =>{
     .db('personal')
     .collection('contacts').remove({ _id: userId }, true);
     if (result.deletedCount > 0){
-      res.status(204).send(); 
+      res.status(200).send(); 
     }else {
       res.status(500).json(result.error || 'An error has occured');
   }} catch (err){
