@@ -74,7 +74,7 @@ const removeDoc = async (req, res) =>{
     const result = await mongodb
     .getDb()
     .db('personal')
-    .collection('contacts').remove({ _id: userId }, true);
+    .collection('contacts').deleteOne({ _id: userId }, true);
     if (result.deletedCount > 0){
       res.status(200).send(); 
     }else {
