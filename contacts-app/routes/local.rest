@@ -1,3 +1,25 @@
-# GET http://localhost:8080/contacts 
+GET http://localhost:8080/
 
+###
+GET http://localhost:8080/contacts 
+
+###
 GET http://localhost:8080/contacts/63b87d672b58c8e87964ad2f
+
+###
+GET http://localhost:8080/contacts/63b87d672b58c8e87964ad2g
+
+###
+GET http://localhost:8080/contacts/add
+
+### Create Contact
+POST http://localhost:8080/contacts/
+content-type: application/json
+
+{
+    "firstName": "Greg",
+    "lastName": "Kermit",
+    "email": "gk@gmail.com",
+    "favoriteColor": "green",
+    "birthday": "09/09/2003"
+}
