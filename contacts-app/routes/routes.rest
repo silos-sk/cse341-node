@@ -19,12 +19,13 @@ content-type: application/json
     "birthday": "09/09/2003"
 }
 
+
 ### UPDATE CONTACT
 PUT http://localhost:8080/contacts/63b87d672b58c8e87964ad30 
 content-type: application/json
 
 {
-    "firstName":"Sara",
+    "firstName":"Sarah",
     "lastName":"Echmo",
     "email":"test@gmail.com",
     "favoriteColor":"Green",
@@ -32,7 +33,7 @@ content-type: application/json
 }
 
 ### DELETE CONTACT
-DELETE http://localhost:8080/contacts/63bddcef6793a62ced92923c
+DELETE http://localhost:8080/contacts/63bdea039668f9228517a154
 
 
 // ** PRODUCTION DEPLOY **
@@ -60,7 +61,7 @@ PUT https://shaira341-w01-personal-assignment.onrender.com/contacts/63b87d672b58
 content-type: application/json
 
 {
-    "firstName":"Sara",
+    "firstName":"Sarahf",
     "lastName":"Echmo",
     "email":"test@gmail.com",
     "favoriteColor":"Green",
@@ -68,4 +69,4 @@ content-type: application/json
 }
 
 ### DELETE CONTACT
-DELETE https://shaira341-w01-personal-assignment.onrender.com/contacts/63bddc8071de0fb2ca8f6bec
+DELETE https://shaira341-w01-personal-assignment.onrender.com/contacts/63bdea79db2b79dfbea410ba
