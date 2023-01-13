@@ -61,7 +61,7 @@ PUT https://shaira341-w01-personal-assignment.onrender.com/contacts/63b87d672b58
 content-type: application/json
 
 {
-    "firstName":"Sarahf",
+    "firstName":"Sarah",
     "lastName":"Echmo",
     "email":"test@gmail.com",
     "favoriteColor":"Green",
@@ -69,4 +69,4 @@ content-type: application/json
 }
 
 ### DELETE CONTACT
-DELETE https://shaira341-w01-personal-assignment.onrender.com/contacts/63bdea79db2b79dfbea410ba
+DELETE https://shaira341-w01-personal-assignment.onrender.com/contacts/63c08a0ccec8e3bf4d7d3a47
