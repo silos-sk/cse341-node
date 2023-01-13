@@ -6,7 +6,7 @@ app
   .use(cors())
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
-  .use('/', require('./routes'));
+  .use('/', require('./routes'))
 
 const db = require('./models');
 db.mongoose
