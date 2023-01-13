@@ -4,16 +4,9 @@
   "description": "LDS Temple API for BYU-Idaho WDD230 student projects",
   "main": "index.js",
   "scripts": {
-<<<<<<< Updated upstream
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "swagger-autogen": "node ./swagger.js"
-
-=======
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "swagger": "node ./swagger.js"
->>>>>>> Stashed changes
   },
   "repository": {
     "type": "git",
@@ -28,15 +21,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-<<<<<<< Updated upstream
-    "express": "^4.18.2",
-    "mongoose": "^6.8.3",
-    "nodemon": "^2.0.15"
-  },
-  "devDependencies": {
-    "swagger-autogen": "^2.22.0",
-    "swagger-ui-express": "^4.6.0"
-=======
     "express": "^4.17.1",
     "mongoose": "^6.0.14",
     "nodemon": "^2.0.15",
@@ -44,6 +28,5 @@
   },
   "devDependencies": {
     "swagger-autogen": "^2.22.0"
->>>>>>> Stashed changes
   }
 }
