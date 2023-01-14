@@ -1,7 +1,7 @@
 # CSE341 | Web Backend Development II
 Winter 2023
 
-##Course Outcomes
+## Course Outcomes
 Students who successfully complete this course will be able to do the following:
 
 - Understand the difference between server-side rendering and REST APIs and how to implement them.
