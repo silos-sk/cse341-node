@@ -10,7 +10,7 @@ Winter 2023
 
 ## Course Goals
 - Working with teams
-- Learning on your own
+- Self-learning
 - Node.js and MongoDB
 - Publishing Node APIs.
 - Multiple API projects
