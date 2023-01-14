@@ -5,12 +5,12 @@ Winter 2023
 - Server-side rendering and REST APIs
 - Secure authentication system in a web application
 - Deploy a full stack application to the web
-- Develop, document, and deploy a secure REST API that performs CRUD operations on a NoSQL database.
-- Effectively contribute to a team while learning independently.
+- Develop, document, and deploy a secure REST API that performs CRUD operations on a NoSQL database
+- Effectively contribute to a team while learning independently
 
 ## Course Goals
 - Working with teams
 - Self-learning
 - Node.js and MongoDB
-- Publishing Node APIs.
+- Publishing Node APIs
 - Multiple API projects
