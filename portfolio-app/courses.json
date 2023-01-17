@@ -1,0 +1,66 @@
+[
+  {
+    "courseCode": "WDD 430",
+    "title": "Web Full-Stack Development",
+    "credits": "3",
+    "techStack": "Angular, Angular CLI, TypeScript, NodeJS, NPM, GitHub, MongoDB",
+    "semesterTaken": "Winter 2023"
+  },
+  {
+    "courseCode": "CSE 341",
+    "title": "Web Backend Development II",
+    "credits": "3",
+    "techStack": "NodeJS, Node APIs, Render, MongoDB",
+    "semesterTaken": "Winter 2023"
+},
+{
+  "courseCode": "CSE 340",
+  "title": "Web Backend Development I",
+  "credits": "3",
+  "techStack": "PHP, MySQL",
+  "semesterTaken": "Fall 2022"
+},
+{
+  "courseCode": "WDD 330",
+  "title": "Web Frontend Development II",
+  "credits": "3",
+  "techStack": "HTML5, CSS3, JavaScript",
+  "semesterTaken": "Spring 2022"
+},
+{
+  "courseCode": "WDD 230",
+  "title": "Web Frontend Development I",
+  "credits": "3",
+  "techStack": "HTML5, CSS3, JavaScript",
+  "semesterTaken": "Winter 2022"
+},
+{
+  "courseCode": "CSE 121B",
+  "title": "JavaScript Language",
+  "credits": "3",
+  "techStack": "JavaScript",
+  "semesterTaken": "Winter 2022"
+},
+{
+  "courseCode": "CSE 210",
+  "title": "Programming with Classes",
+  "credits": "3",
+  "techStack": "Python",
+  "semesterTaken": "Spring 2022"
+},
+{
+  "courseCode": "CSE 111",
+  "title": "Programming with Functions",
+  "credits": "3",
+  "techStack": "Python",
+  "semesterTaken": "Fall 2021"
+},
+{
+  "courseCode": "COMM 130",
+  "title": "Visual Media",
+  "credits": "3",
+  "techStack": "Adobe Photoshop, InDesign, Illustrator",
+  "semesterTaken": "Fall 2022"
+}
+]
+
