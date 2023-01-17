@@ -1,0 +1,63 @@
+[
+  {
+        "title": "Temple Inn & Suites",
+        "websiteUrl": "https://silos-sk.github.io/wdd230/temple/index.html",
+        "gitHubUrl": "https://github.com/silos-sk/wdd230/tree/main/temple",
+        "techStack": "HTML5, CSS3, JavaScript (APIs, JSON, DOM - Event listeners), Responsive Web Design, HTML Form Validation",
+        "summary": "Website design planning and implementation of a fictional hotel using weather external API, local JSON temples data, and reservation & contact form validation",
+        "imgUrl_sm": "images/portfolio-temple-326x343-webp.webp",
+        "imgUrl_lg": "images/portfolio-temple-full-webp.webp",
+        "imgAlt": "Screenshot of the Temple & Inn Suites Website homepage"
+  },
+  {
+    "title": "Random Harry Potter Character Generator",
+    "websiteUrl": "https://silos-sk.github.io/wdd330/hp_app/index.html",
+    "gitHubUrl": "https://github.com/silos-sk/wdd330/tree/main/hp_app",
+    "techStack": "HTML5, CSS3, CSS Transitions, JavaScript (External API, Event listeners, Arrays, Objects, Loops, JS Classes, Modular JS), Responsive Web Design",
+    "summary": "One-page App using External Public Harry Potter Characters API filtered to display only items with images and corresponding character information",
+    "imgUrl_sm": "images/portfolio-hp-app-326x217-webp.webp",
+    "imgUrl_lg": "images/portfolio-hp-app-full-webp.webp",
+    "imgAlt": "Screenshot of the Random Harry Potter Character Generator App homepage"
+  },
+  {
+    "title": "Cambs Chamber of Commerce",
+    "websiteUrl": "https://silos-sk.github.io/wdd230/chamber/index.html",
+    "gitHubUrl": "https://github.com/silos-sk/wdd230/tree/main/chamber",
+    "techStack": "HTML5, CSS3, JavaScript (APIs, JSON, Local Storage, DOM - Event Listeners), Responsive Web Design, Website Optimization, HTML Form Validation",
+    "summary": "Website design & development of a fictional chamber of commerce incorporating website loading optimization, page visit JS local storage, and contact form validation",
+    "imgUrl_sm": "images/portfolio-coc-326x217-webp.webp",
+    "imgUrl_lg": "images/portfolio-coc-full-webp.webp",
+    "imgAlt": "Screenshot of the Cambs Chamber of Commerce Website homepage"
+  },
+  {
+    "title": "My K-dramas on Deck",
+    "websiteUrl": "https://silos-sk.github.io/mkod/index.html",
+    "gitHubUrl": "https://github.com/silos-sk/mkod",
+    "techStack": "HTML5, CSS3, JavaScript (Local API), Responsive Web Design",
+    "summary": "Personal website interest (Korean Dramas) with focus on site planning, implementation, and skills practice",
+    "imgUrl_sm": "images/portfolio-mkod-326x217-webp.webp",
+    "imgUrl_lg": "images/portfolio-mkod-full-webp.webp",
+    "imgAlt": "Screenshot of the My K-dramas on Deck Website homepage"
+  },
+  {
+    "title": "Animal Alphabet and Words React App",
+    "websiteUrl": "https://alphabet-words.netlify.app/",
+    "gitHubUrl": "https://github.com/silos-sk/pb_git/tree/master/alphabet-cards",
+    "techStack": "HTML5, CSS3, JavaScript, React",
+    "summary": "Capstone Project using React skills and dependencies created during the PurpleBeard Front-End Development Bootcamp",
+    "imgUrl_sm": "images/portfolio-alphabet-326x217.webp",
+    "imgUrl_lg": "images/portfolio-alphabet-full.webp",
+    "imgAlt": "Screenshot of the Animal Alphabet and Words React App homepage"
+  },
+  {
+    "title": "Todo App",
+    "websiteUrl": "https://silos-sk.github.io/pb_git/todo_app/",
+    "gitHubUrl": "https://github.com/silos-sk/pb_git/tree/master/todo_app",
+    "techStack": "HTML5, CSS3, JavaScript",
+    "summary": "An attempt to create a todo app where a user can add, delete, and display todo list from local storage.",
+    "imgUrl_sm": "images/portfolio-todo-326x217.webp",
+    "imgUrl_lg": "images/portfolio-todo-full.webp",
+    "imgAlt": "Screenshot of the Todo App homepage"
+
+  }
+]
