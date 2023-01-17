@@ -1,7 +1,7 @@
 {
-  "name": "temple-api",
+  "name": "contacts-api",
   "version": "1.0.0",
-  "description": "LDS Temple API for BYU-Idaho WDD230 student projects",
+  "description": "Contacts API for BYU-Idaho WDD341 student projects",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathanbirch/temple-api.git"
+    "url": "git+https://github.com/silos-sk/cse341-node/contacts-app.git"
   },
-  "author": "Nathan Birch",
+  "author": "Shaira Silos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nathanbirch/temple-api/issues"
+    "url": "https://github.com/silos-sk/cse341-node/issues"
   },
-  "homepage": "https://github.com/nathanbirch/temple-api#readme",
+  "homepage": "https://github.com/silos-sk/cse341-node#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
