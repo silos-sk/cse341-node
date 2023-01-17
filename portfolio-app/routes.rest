@@ -44,18 +44,33 @@ content-type: application/json
 
 # // ** PRODUCTION DEPLOY **
 
-# ### GET ALL PROJECTS
-# GET https://shaira341-w01-personal-assignment.onrender.com/projects
+### GET ALL PROJECTS
+GET https://portfolio-app-iu9g.onrender.com/projects
 
-# ### GET PROJECT BY ID
-# GET https://shaira341-w01-personal-assignment.onrender.com/projects/63b87d672b58c8e87964ad2f
+### GET PROJECT BY ID
+GET https://portfolio-app-iu9g.onrender.com/projects/63c6d010d1398e8d34f449aa
 
-# ### CREATE PROJECT
-# POST https://shaira341-w01-personal-assignment.onrender.com/projects
+### CREATE PROJECT
+POST https://portfolio-app-iu9g.onrender.com/projects
+content-type: application/json
+
+{
+    "title": "test2",
+    "websiteUrl": "test",
+    "gitHubUrl": "test",
+    "techStack": "test",
+    "summary": "test",
+    "imgUrl_sm": "test",
+    "imgUrl_lg": "test",
+    "imgAlt": "test"
+}
+
+# ### UPDATE PROJECT
+# PUT https://portfolio-app-iu9g.onrender.com/projects/63b87d672b58c8e87964ad30 
 # content-type: application/json
 
 # {
-#     "title": "test",
+#     "title": "test2",
 #     "websiteUrl": "test",
 #     "gitHubUrl": "test",
 #     "techStack": "test",
@@ -65,17 +80,5 @@ content-type: application/json
 #     "imgAlt": "test"
 # }
 
-# ### UPDATE PROJECT
-# PUT https://shaira341-w01-personal-assignment.onrender.com/projects/63b87d672b58c8e87964ad30 
-# content-type: application/json
-
-# {
-#     "firstName":"Sarah",
-#     "lastName":"Echmo",
-#     "email":"test@gmail.com",
-#     "favoriteColor":"Green",
-#     "birthday":"12/12/1995"
-# }
-
 # ### DELETE PROJECT
-# DELETE https://shaira341-w01-personal-assignment.onrender.com/projects/63c08a0ccec8e3bf4d7d3a47
+# DELETE ttps://portfolio-app-iu9g.onrender.com/projects/63c08a0ccec8e3bf4d7d3a47
