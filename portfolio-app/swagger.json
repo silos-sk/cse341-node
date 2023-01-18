@@ -11,7 +11,7 @@
   "host": "portfolio-app-iu9g.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "tags": [
     {

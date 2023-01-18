@@ -6,7 +6,7 @@ const doc = {
     description: 'Projects and Courses API'
   },
   host: 'portfolio-app-iu9g.onrender.com',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
