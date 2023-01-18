@@ -4,6 +4,7 @@ const home = require('../controllers');
 
 router.use('/', require('./swagger.js'));
 router.use('/projects', require('./projects'))
+router.use('/courses', require('./courses'))
 router.use('/', home.displayHome)
 
 module.exports = router;

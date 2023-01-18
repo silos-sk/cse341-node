@@ -1,6 +1,14 @@
-// ** LOCALHOST **
+// ** LOCALHOST 
 GET http://localhost:8080/
 
+//** COURSES
+### GET ALL COURSES
+GET http://localhost:8080/courses
+
+### GET COURSE BY ID
+GET http://localhost:8080/courses/63c6d01cd1398e8d34f449ad
+
+//** PROJECTS
 ### GET ALL PROJECTS
 GET http://localhost:8080/projects
 
@@ -44,6 +52,14 @@ content-type: application/json
 
 # // ** PRODUCTION DEPLOY **
 
+//** COURSES
+### GET ALL COURSES
+GET https://portfolio-app-iu9g.onrender.com/courses
+
+### GET COURSE BY ID
+GET https://portfolio-app-iu9g.onrender.com/courses/63c6d01cd1398e8d34f449ad
+
+//** PROJECTS
 ### GET ALL PROJECTS
 GET https://portfolio-app-iu9g.onrender.com/projects
 
