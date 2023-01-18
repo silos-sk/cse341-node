@@ -2,11 +2,11 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
-    description: 'Projects and Courses API'
+    title: 'Projects and Courses API',
+    description: 'This is an API server for my personal portfolio website'
   },
   host: 'portfolio-app-iu9g.onrender.com',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
