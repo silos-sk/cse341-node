@@ -6,7 +6,7 @@ GET http://localhost:8080/
 GET http://localhost:8080/courses
 
 ### GET COURSE BY ID
-GET http://localhost:8080/courses/63c6d01cd1398e8d34f449ad
+GET http://localhost:8080/courses/63c6d01cd1398e8d34f449b3
 
 //** PROJECTS
 ### GET ALL PROJECTS
