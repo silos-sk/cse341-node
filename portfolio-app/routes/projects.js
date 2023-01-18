@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const portfolio = require('../controllers/portfolio');
+const projects = require('../controllers/project');
 
 
-router.get('/', portfolio.getData);
-router.post('/', portfolio.createDoc) 
-router.route('/:id').get(portfolio.getDocById)
+router.get('/', projects.getData);
+router.post('/', projects.createDoc) 
+router.route('/:id').get(projects.getDocById)
 
 module.exports = router;
