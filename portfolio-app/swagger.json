@@ -112,8 +112,81 @@
             "description": "Bad Request"
           }
         }
+      },
+    "put": {
+      "description": "Update a project",
+      "tags": ["Projects"],
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "in": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "example": "any"
+              },
+              "websiteUrl": {
+                "example": "any"
+              },
+              "gitHubUrl": {
+                "example": "any"
+              },
+              "techStack": {
+                "example": "any"
+              },
+              "summary": {
+                "example": "any"
+              },
+              "imgUrl_sm": {
+                "example": "any"
+              },
+              "imgUrl_lg": {
+                "example": "any"
+              },
+              "imgAlt": {
+                "example": "any"
+              }
+            }
+          }
+        }
+      ],
+      "responses": {
+        "204": {
+          "description": "No Content"
+        },
+        "500": {
+          "description": "Internal Server Error"
+        }
       }
     },
+    "delete": {
+      "description": "Delete a project",
+      "tags": ["Projects"],
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        },
+        "500": {
+          "description": "Internal Server Error"
+        }
+      }
+    }
+  },
     "/courses/": {
       "get": {
         "description": "Get all courses",

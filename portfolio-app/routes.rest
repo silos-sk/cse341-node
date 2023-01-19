@@ -31,23 +31,23 @@ content-type: application/json
 }
 
 
-# ### UPDATE PROJECT
-# PUT http://localhost:8080/projects/63b87d672b58c8e87964ad30 
-# content-type: application/json
+### UPDATE PROJECT
+PUT http://localhost:8080/projects/63c9a38a2f489ecfd035ba94
+content-type: application/json
 
-# {
-#     "title": "test1",
-#     "websiteUrl": "test",
-#     "gitHubUrl": "test",
-#     "techStack": "test",
-#     "summary": "test",
-#     "imgUrl_sm": "test",
-#     "imgUrl_lg": "test",
-#     "imgAlt": "test"
-# }
+{
+    "title": "Testing",
+    "websiteUrl": "test",
+    "gitHubUrl": "test",
+    "techStack": "test",
+    "summary": "test",
+    "imgUrl_sm": "test",
+    "imgUrl_lg": "test",
+    "imgAlt": "test"
+}
 
-# ### DELETE PROJECT
-# DELETE http://localhost:8080/projects/63bdea039668f9228517a154
+### DELETE PROJECT
+DELETE http://localhost:8080/projects/63c74e87e3fff21ba0103305
 
 
 # // ** PRODUCTION DEPLOY **
@@ -81,20 +81,19 @@ content-type: application/json
     "imgAlt": "test"
 }
 
-# ### UPDATE PROJECT
-# PUT https://portfolio-app-iu9g.onrender.com/projects/63b87d672b58c8e87964ad30 
-# content-type: application/json
+### UPDATE PROJECT
+PUT https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
 
-# {
-#     "title": "test2",
-#     "websiteUrl": "test",
-#     "gitHubUrl": "test",
-#     "techStack": "test",
-#     "summary": "test",
-#     "imgUrl_sm": "test",
-#     "imgUrl_lg": "test",
-#     "imgAlt": "test"
-# }
+{
+    "title": "test2",
+    "websiteUrl": "test",
+    "gitHubUrl": "test",
+    "techStack": "test",
+    "summary": "test",
+    "imgUrl_sm": "test",
+    "imgUrl_lg": "test",
+    "imgAlt": "test"
+}
 
-# ### DELETE PROJECT
-# DELETE ttps://portfolio-app-iu9g.onrender.com/projects/63c08a0ccec8e3bf4d7d3a47
+### DELETE PROJECT
+DELETE ttps://portfolio-app-iu9g.onrender.com/projects/63c08a0ccec8e3bf4d7d3a47
