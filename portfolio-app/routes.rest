@@ -83,6 +83,7 @@ content-type: application/json
 
 ### UPDATE PROJECT
 PUT https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
+content-type: application/json
 
 {
     "title": "test2",
@@ -96,4 +97,4 @@ PUT https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
 }
 
 ### DELETE PROJECT
-DELETE ttps://portfolio-app-iu9g.onrender.com/projects/63c08a0ccec8e3bf4d7d3a47
+DELETE https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
