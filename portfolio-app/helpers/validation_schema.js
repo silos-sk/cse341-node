@@ -1,14 +1,15 @@
 const Joi = require('joi');
 
 const projSchema = Joi.object({
+    _id: Joi.object().unknown(),
     title: Joi.string()
     .alphanum()
     .required()
     .default('Portfolio Project'),
-    websiteUrl: Joi.string().uri().lowercase().required()
-    .default('#'),
-    gitHubUrl: Joi.string().uri().lowercase().required()
-    .default('#'),
+    websiteUrl: Joi.string().uri().lowercase()
+    ,
+    gitHubUrl: Joi.string().uri().lowercase()
+    ,
     techStack: Joi.string(),
     summary: Joi.string(),
     imgUrl_sm: Joi.string().uri({allowRelative: true}),

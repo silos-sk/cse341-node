@@ -21,12 +21,12 @@ content-type: application/json
 
 {
     "title": "test",
-    "websiteUrl": "test",
-    "gitHubUrl": "test",
+    "websiteUrl": "http://www.google.com",
+    "gitHubUrl": "http://www.google.com",
     "techStack": "test",
     "summary": "test",
-    "imgUrl_sm": "test",
-    "imgUrl_lg": "test",
+    "imgUrl_sm": "sdfpng",
+    "imgUrl_lg": "dad",
     "imgAlt": "test"
 }
 
@@ -36,7 +36,7 @@ PUT http://localhost:8080/projects/63c9a38a2f489ecfd035ba94
 content-type: application/json
 
 {
-    "title": "Testing",
+    "title": "asf",
     "websiteUrl": "test",
     "gitHubUrl": "test",
     "techStack": "test",
@@ -47,7 +47,7 @@ content-type: application/json
 }
 
 ### DELETE PROJECT
-DELETE http://localhost:8080/projects/63c74e87e3fff21ba0103305
+DELETE http://localhost:8080/projects/63c9c8a9607f8ec95f8e2ad0
 
 
 # // ** PRODUCTION DEPLOY **
