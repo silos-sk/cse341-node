@@ -91,6 +91,7 @@ const removeDoc = async (req, res) =>{
   try{
     if(!userId) {
       res.status(400).send({ message: err.message } || 'Please enter a valid ID');
+      return;
     }
     const result = await mongodb
     .getDb()
