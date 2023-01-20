@@ -1,6 +1,7 @@
 const mongodb = require('../db/connect');
 const ObjId = require('mongodb').ObjectId;
 const Project = require('../models/projectSchema');
+const {projSchema} = require('../helpers/validation_schema')
 
 const getData = async (req, res) => {
   try{
@@ -46,10 +47,11 @@ const createDoc = async (req, res) =>{
   })
 
   try{
+    const validatedProj = await projSchema.validateAsync(newProject.toObject());
     const result = await mongodb
     .getDb()
     .db('portfolio')
-    .collection('projects').insertOne(newProject);
+    .collection('projects').insertOne(validatedProj);
     res.status(201).json(result);   
   } catch (err){
     res.status(400).json({ message: err.message });
@@ -70,10 +72,11 @@ const updateDoc = async (req, res) =>{
   }
 
   try{
+    const validatedProj = await projSchema.validateAsync(project);
     const result = await mongodb
     .getDb()
     .db('portfolio')
-    .collection('projects').replaceOne({ _id: userId }, project);
+    .collection('projects').replaceOne({ _id: userId }, validatedProj);
     if (result.modifiedCount > 0){
       res.status(204).send(); 
     }else {
@@ -84,8 +87,12 @@ const updateDoc = async (req, res) =>{
 };
 
 const removeDoc = async (req, res) =>{
-  const userId = new ObjId(req.params.id);
+  const userId = ObjId(req.params.id);
   try{
+    if(!userId) {
+      res.status(400).send({ message: err.message } || 'Please enter a valid ID');
+      return;
+    }
     const result = await mongodb
     .getDb()
     .db('portfolio')

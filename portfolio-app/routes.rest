@@ -21,12 +21,12 @@ content-type: application/json
 
 {
     "title": "test",
-    "websiteUrl": "test",
-    "gitHubUrl": "test",
+    "websiteUrl": "http://www.google.com",
+    "gitHubUrl": "http://www.google.com",
     "techStack": "test",
     "summary": "test",
-    "imgUrl_sm": "test",
-    "imgUrl_lg": "test",
+    "imgUrl_sm": "sdfpng",
+    "imgUrl_lg": "dad",
     "imgAlt": "test"
 }
 
@@ -36,7 +36,7 @@ PUT http://localhost:8080/projects/63c9a38a2f489ecfd035ba94
 content-type: application/json
 
 {
-    "title": "Testing",
+    "title": "asf",
     "websiteUrl": "test",
     "gitHubUrl": "test",
     "techStack": "test",
@@ -47,7 +47,7 @@ content-type: application/json
 }
 
 ### DELETE PROJECT
-DELETE http://localhost:8080/projects/63c74e87e3fff21ba0103305
+DELETE http://localhost:8080/projects/63c9c8a9607f8ec95f8e2ad0
 
 
 # // ** PRODUCTION DEPLOY **
@@ -83,6 +83,7 @@ content-type: application/json
 
 ### UPDATE PROJECT
 PUT https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
+content-type: application/json
 
 {
     "title": "test2",
@@ -96,4 +97,4 @@ PUT https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
 }
 
 ### DELETE PROJECT
-DELETE ttps://portfolio-app-iu9g.onrender.com/projects/63c08a0ccec8e3bf4d7d3a47
+DELETE https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
