@@ -21,8 +21,8 @@ content-type: application/json
 
 {
     "title": "test",
-    "websiteUrl": "http://www.google.com",
-    "gitHubUrl": "http://www.google.com",
+    "websiteUrl": "le.com",
+    "gitHubUrl": "hcom",
     "techStack": "test",
     "summary": "test",
     "imgUrl_sm": "sdfpng",
