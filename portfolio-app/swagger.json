@@ -3,31 +3,24 @@
   "info": {
     "title": "Projects and Courses API",
     "description": "This is an API server for my personal portfolio website",
-    "version": "1.0.0",
-    "contact":{
-      "email": "sil21019@byui.edu"
-    }
+    "version": "1.0.0"
   },
   "host": "portfolio-app-iu9g.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
-  "tags": [
-    {
-      "name": "Projects",
-      "description": "Operations about Projects" 
-    },
-    {
-      "name": "Courses",
-      "description": "Operations about Courses" 
-    }
-  ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/projects/": {
       "get": {
-        "description": "Get all portfolio projects",
-        "tags": ["Projects"],
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -42,8 +35,7 @@
         }
       },
       "post": {
-        "description": "Create new portfolio project",
-        "tags": ["Projects"],
+        "description": "",
         "parameters": [
           {
             "name": "body",
@@ -91,8 +83,7 @@
     },
     "/projects/{id}": {
       "get": {
-        "description": "Get project by ID",
-        "tags": ["Projects"],
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -113,84 +104,84 @@
           }
         }
       },
-    "put": {
-      "description": "Update a project",
-      "tags": ["Projects"],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "name": "body",
-          "in": "body",
-          "schema": {
-            "type": "object",
-            "properties": {
-              "title": {
-                "example": "any"
-              },
-              "websiteUrl": {
-                "example": "any"
-              },
-              "gitHubUrl": {
-                "example": "any"
-              },
-              "techStack": {
-                "example": "any"
-              },
-              "summary": {
-                "example": "any"
-              },
-              "imgUrl_sm": {
-                "example": "any"
-              },
-              "imgUrl_lg": {
-                "example": "any"
-              },
-              "imgAlt": {
-                "example": "any"
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "example": "any"
+                },
+                "websiteUrl": {
+                  "example": "any"
+                },
+                "gitHubUrl": {
+                  "example": "any"
+                },
+                "techStack": {
+                  "example": "any"
+                },
+                "summary": {
+                  "example": "any"
+                },
+                "imgUrl_sm": {
+                  "example": "any"
+                },
+                "imgUrl_lg": {
+                  "example": "any"
+                },
+                "imgAlt": {
+                  "example": "any"
+                }
               }
             }
           }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
         }
-      ],
-      "responses": {
-        "204": {
-          "description": "No Content"
-        },
-        "500": {
-          "description": "Internal Server Error"
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
         }
       }
     },
-    "delete": {
-      "description": "Delete a project",
-      "tags": ["Projects"],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "responses": {
-        "200": {
-          "description": "OK"
-        },
-        "500": {
-          "description": "Internal Server Error"
-        }
-      }
-    }
-  },
     "/courses/": {
       "get": {
-        "description": "Get all courses",
-        "tags": ["Courses"],
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -207,8 +198,7 @@
     },
     "/courses/{id}": {
       "get": {
-        "description": "Get course by ID",
-        "tags": ["Courses"],
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -229,6 +219,53 @@
           }
         }
       }
+    }
+  },
+  "definitions": {
+    "PayloadA": {
+      "type": "object",
+      "properties": {
+        "projSchema": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "object",
+              "properties": {}
+            },
+            "title": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9]*$",
+              "default": "Portfolio Project"
+            },
+            "websiteUrl": {
+              "type": "string"
+            },
+            "gitHubUrl": {
+              "type": "string"
+            },
+            "techStack": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "imgUrl_sm": {
+              "type": "string"
+            },
+            "imgUrl_lg": {
+              "type": "string"
+            },
+            "imgAlt": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     }
   }
 }
