@@ -247,7 +247,6 @@
             },
             "title": {
               "type": "string",
-              "pattern": "^[a-zA-Z0-9]*$",
               "default": "Portfolio Project"
             },
             "websiteUrl": {

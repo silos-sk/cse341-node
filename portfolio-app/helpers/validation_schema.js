@@ -3,7 +3,6 @@ const Joi = require('joi');
 const projSchema = Joi.object({
     _id: Joi.object().unknown(),
     title: Joi.string()
-    .alphanum()
     .required()
     .default('Portfolio Project'),
     websiteUrl: Joi.string().uri().lowercase()
