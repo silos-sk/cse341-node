@@ -3,24 +3,31 @@
   "info": {
     "title": "Projects and Courses API",
     "description": "This is an API server for my personal portfolio website",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "contact":{
+      "email": "sil21019@byui.edu"
+    }
   },
   "host": "portfolio-app-iu9g.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
-  "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
+  "tags": [
+    {
+      "name": "Projects",
+      "description": "Operations about Projects" 
     },
+    {
+      "name": "Courses",
+      "description": "Operations about Courses" 
+    }
+  ],
+  "paths": {
     "/projects/": {
       "get": {
-        "description": "",
+        "description": "Get all portfolio projects",
+        "tags": ["Projects"],
         "produces": [
           "application/json"
         ],
@@ -35,7 +42,8 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Create new portfolio project",
+        "tags": ["Projects"],
         "parameters": [
           {
             "name": "body",
@@ -83,7 +91,8 @@
     },
     "/projects/{id}": {
       "get": {
-        "description": "",
+        "description": "Get project by ID",
+        "tags": ["Projects"],
         "produces": [
           "application/json"
         ],
@@ -105,7 +114,8 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update a project",
+        "tags": ["Projects"],
         "parameters": [
           {
             "name": "id",
@@ -157,7 +167,8 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete a project",
+        "tags": ["Projects"],
         "parameters": [
           {
             "name": "id",
@@ -181,7 +192,8 @@
     },
     "/courses/": {
       "get": {
-        "description": "",
+        "description": "Get all courses",
+        "tags": ["Courses"],
         "produces": [
           "application/json"
         ],
@@ -198,7 +210,8 @@
     },
     "/courses/{id}": {
       "get": {
-        "description": "",
+        "description": "Get course by ID",
+        "tags": ["Courses"],
         "produces": [
           "application/json"
         ],
@@ -222,7 +235,7 @@
     }
   },
   "definitions": {
-    "PayloadA": {
+    "projectSchema": {
       "type": "object",
       "properties": {
         "projSchema": {

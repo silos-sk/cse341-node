@@ -10,7 +10,7 @@ const doc = {
     description: 'This is an API server for my personal portfolio website'
   },
   '@definitions': {
-    PayloadA: swagger},
+    projectSchema: swagger},
   host: 'portfolio-app-iu9g.onrender.com',
   schemes: ['https']
 };
