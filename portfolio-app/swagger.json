@@ -8,10 +8,10 @@
       "email": "sil21019@byui.edu"
     }
   },
-  "host": "portfolio-app-iu9g.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "tags": [
     {

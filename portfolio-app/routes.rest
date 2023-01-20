@@ -65,7 +65,7 @@ GET https://portfolio-app-iu9g.onrender.com/courses/63c6d01cd1398e8d34f449ad
 GET https://portfolio-app-iu9g.onrender.com/projects
 
 ### GET PROJECT BY ID
-GET https://portfolio-app-iu9g.onrender.com/projects/63c6d010d1398e8d34f449aa
+GET https://portfolio-app-iu9g.onrender.com/projects/63cb0e08575f6f39a0a2cece
 
 ### CREATE PROJECT
 POST https://portfolio-app-iu9g.onrender.com/projects
