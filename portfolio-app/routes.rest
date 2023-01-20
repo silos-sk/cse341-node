@@ -72,8 +72,8 @@ content-type: application/json
 
 {
     "title": "test2",
-    "websiteUrl": "test",
-    "gitHubUrl": "test",
+    "websiteUrl": "http://www.website.com",
+    "gitHubUrl": "http://www.github.com",
     "techStack": "test",
     "summary": "test",
     "imgUrl_sm": "test",
