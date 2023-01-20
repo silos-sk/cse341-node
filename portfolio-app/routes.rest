@@ -32,19 +32,20 @@ content-type: application/json
 
 
 ### UPDATE PROJECT
-PUT http://localhost:8080/projects/63c9a38a2f489ecfd035ba94
+PUT http://localhost:8080/projects/63cb0e08575f6f39a0a2cece
 content-type: application/json
 
 {
-    "title": "asf",
-    "websiteUrl": "test",
-    "gitHubUrl": "test",
-    "techStack": "test",
-    "summary": "test",
-    "imgUrl_sm": "test",
-    "imgUrl_lg": "test",
-    "imgAlt": "test"
+    "title": "Project Name",
+    "websiteUrl": "http://www.website.com",
+    "gitHubUrl": "http://www.github.com",
+    "techStack": "HTML, CSS, JS",
+    "summary": "This is a summary",
+    "imgUrl_sm": "images/placeholder_sm.jpg",
+    "imgUrl_lg": "images/placeholder_lg.jpg",
+    "imgAlt": "Project"
 }
+
 
 ### DELETE PROJECT
 DELETE http://localhost:8080/projects/63c9c8a9607f8ec95f8e2ad0
@@ -82,19 +83,20 @@ content-type: application/json
 }
 
 ### UPDATE PROJECT
-PUT https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
+PUT https://portfolio-app-iu9g.onrender.com/projects/63cb0e08575f6f39a0a2cece
 content-type: application/json
 
 {
-    "title": "test2",
-    "websiteUrl": "test",
-    "gitHubUrl": "test",
-    "techStack": "test",
-    "summary": "test",
-    "imgUrl_sm": "test",
-    "imgUrl_lg": "test",
-    "imgAlt": "test"
+    "title": "Project Name",
+    "websiteUrl": "http://www.website.com",
+    "gitHubUrl": "http://www.github.com",
+    "techStack": "HTML, CSS, JS",
+    "summary": "This is a summary",
+    "imgUrl_sm": "images/placeholder_sm.jpg",
+    "imgUrl_lg": "images/placeholder_lg.jpg",
+    "imgAlt": "Project"
 }
+
 
 ### DELETE PROJECT
 DELETE https://portfolio-app-iu9g.onrender.com/projects/63c9a38a2f489ecfd035ba94
