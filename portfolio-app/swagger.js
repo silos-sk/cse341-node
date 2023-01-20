@@ -11,8 +11,8 @@ const doc = {
   },
   '@definitions': {
     projectSchema: swagger},
-  host: 'localhost:8080',
-  schemes: ['http']
+  host: 'portfolio-app-iu9g.onrender.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
