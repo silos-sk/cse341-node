@@ -21,8 +21,8 @@ content-type: application/json
 
 {
     "title": "test",
-    "websiteUrl": "le.com",
-    "gitHubUrl": "hcom",
+    "websiteUrl": "http://www.website.com",
+    "gitHubUrl": "http://www.github.com",
     "techStack": "test",
     "summary": "test",
     "imgUrl_sm": "sdfpng",
@@ -32,11 +32,11 @@ content-type: application/json
 
 
 ### UPDATE PROJECT
-PUT http://localhost:8080/projects/63cb0e08575f6f39a0a2cece
+PUT http://localhost:8080/projects/63cbd46b33e9e7355471d2f1
 content-type: application/json
 
 {
-    "title": "Project Name",
+    "title": "Project Names",
     "websiteUrl": "http://www.website.com",
     "gitHubUrl": "http://www.github.com",
     "techStack": "HTML, CSS, JS",
@@ -48,7 +48,7 @@ content-type: application/json
 
 
 ### DELETE PROJECT
-DELETE http://localhost:8080/projects/63c9c8a9607f8ec95f8e2ad0
+DELETE http://localhost:8080/projects/63cbd46b33e9e7355471d2f1
 
 
 # // ** PRODUCTION DEPLOY **
