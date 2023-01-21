@@ -5,41 +5,49 @@ const {projSchema} = require('../helpers/validation_schema')
 
 const getData = async (req, res) => {
   try{
-    const result = await mongodb.getDb().db('portfolio').collection('projects').find();
-    result.toArray().then((lists) => {
-      if(err){
-        res.status(400).json({ message: err.message });
-      }
+    const result = await mongodb
+    .getDb()
+    .db('portfolio')
+    .collection('projects')
+    .find();
+  result.toArray().then((lists) => {
+    if (lists){
       res.setHeader('Content-Type', 'application/json');
-      res.status(200).json(lists); 
-    });
-  } catch (err){
-    res.status(400).json({ message: err.message });
-  }
-  }
-    
+      res.status(200).json(lists);
+    } else {
+      res.status(400).json(result.error || 'An error has occured');
+    }
+   
+  });
+} catch (err){
+  res.status(400).json({ message: err.message });
+}
+};
 
 const getDocById = async (req, res) => {
-  const userId = new ObjId(req.params.id);
+  if (!ObjId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to find a contact.');
+}
   try{
     const result = await mongodb
     .getDb()
     .db('portfolio')
     .collection('projects')
-    .find({ _id: userId });
+    .find();
   result.toArray().then((lists) => {
-    if(err){
-      res.status(400).json({ message: err.message });
+    if (lists){
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(lists[0]);
+    } else {
+      res.status(400).json(result.error || 'An error has occured');
     }
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists[0]);
+   
   });
 } catch (err){
   res.status(400).json({ message: err.message });
 }
-}
+};
   
-
 const createDoc = async (req, res) =>{
   const newProject = new Project({
     title: req.body.title,
@@ -65,6 +73,9 @@ const createDoc = async (req, res) =>{
 };
 
 const updateDoc = async (req, res) =>{
+  if (!ObjId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to update a contact.');
+  }
   const userId = new ObjId(req.params.id);
   const project = {
     title: req.body.title,
@@ -93,12 +104,12 @@ const updateDoc = async (req, res) =>{
 };
 
 const removeDoc = async (req, res) =>{
+  if (!ObjId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to delete a contact.');
+  }
   const userId = ObjId(req.params.id);
+
   try{
-    if(!userId) {
-      res.status(400).send({ message: err.message } || 'Please enter a valid ID');
-      return;
-    }
     const result = await mongodb
     .getDb()
     .db('portfolio')
