@@ -13,7 +13,7 @@ GET http://localhost:8080/courses/63c6d01cd1398e8d34f449b3
 GET http://localhost:8080/projects
 
 ### GET PROJECT BY ID
-GET http://localhost:8080/projects/63c6d010d1398e8d34f449aa
+GET http://localhost:8080/projects/63c6d010d1398e8d34f449a6
 
 ### CREATE PROJECT
 POST http://localhost:8080/projects/
