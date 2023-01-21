@@ -28,12 +28,13 @@ const getDocById = async (req, res) => {
   if (!ObjId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid contact id to find a contact.');
 }
+const userId = ObjId(req.params.id);
   try{
     const result = await mongodb
     .getDb()
     .db('portfolio')
     .collection('projects')
-    .find();
+    .find({ _id: userId });
   result.toArray().then((lists) => {
     if (lists){
       res.setHeader('Content-Type', 'application/json');
