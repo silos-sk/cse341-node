@@ -8,14 +8,13 @@ const authRoutes = require('./routes/auth-routes');
 const port = process.env.PORT || 8080;
 const app = express();
 
-
-
 app
   .use(cors())
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
   .use('/', require('./routes'))
   .use('/auth', authRoutes)
+  .use('/public', express.static('public'))
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
