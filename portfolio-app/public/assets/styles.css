@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    margin: 0;
+    color: #222;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(172, 71, 150);
+    background: linear-gradient(0deg, rgb(83, 6, 81) 0%, rgb(119, 5, 102) 100%);
+  }
+  
+  .content {
+    background: white;
+    width: 380px;
+    height: 150px;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 16px rgb(98, 98, 98);
+  }
+  
+  h1 {
+    font-family: 'Georgia', serif;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  
+  .visible{
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    line-height: 38px;
+    padding-top: 2px;
+    border-radius: 20px;
+    color: white;
+    background: rgb(121, 4, 39);
+    margin: 0 auto;
+    border: none;
+    font-size: 14px;
+  }
+  
