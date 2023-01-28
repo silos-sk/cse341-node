@@ -7,14 +7,14 @@ body {
     justify-content: center;
     align-items: center;
     background: rgb(172, 71, 150);
-    background: linear-gradient(0deg, rgb(83, 6, 81) 0%, rgb(119, 5, 102) 100%);
+    background: linear-gradient(360deg, rgb(83, 6, 81) 0%, rgb(119, 5, 102) 100%);
   }
   
   .content {
     background: white;
     width: 380px;
     height: 150px;
-    border-radius: 2rem;
+    border-radius: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -39,9 +39,9 @@ body {
     width: 220px;
     line-height: 38px;
     padding-top: 2px;
-    border-radius: 20px;
+    border-radius: 1.2rem;
     color: white;
-    background: rgb(121, 4, 39);
+    background: rgb(223, 145, 11);
     margin: 0 auto;
     border: none;
     font-size: 14px;
