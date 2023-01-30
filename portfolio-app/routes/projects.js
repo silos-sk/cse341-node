@@ -15,7 +15,7 @@ router.get('/', projects.getData);
 // Auth0
 router.post('/', requiresAuth(), projects.createDoc) 
 
-router.route('/:id').get(projects.getDocById).put(projects.updateDoc).delete(projects.removeDoc)
+router.route('/:id').get(projects.getDocById).put(requiresAuth(), projects.updateDoc).delete(requiresAuth(), projects.removeDoc)
 
 
 
