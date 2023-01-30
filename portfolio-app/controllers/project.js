@@ -26,7 +26,7 @@ const getData = async (req, res) => {
 
 const getDocById = async (req, res) => {
   if (!ObjId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to find a contact.');
+    res.status(400).json('Must use a valid project id to find a project.');
 }
 const userId = ObjId(req.params.id);
   try{

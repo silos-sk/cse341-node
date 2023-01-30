@@ -3,16 +3,30 @@
   "info": {
     "title": "Projects and Courses API",
     "description": "This is an API server for my personal portfolio website",
-    "version": "1.0.0",
-    "contact":{
-      "email": "sil21019@byui.edu"
-    }
+    "version": "1.0.0"
   },
   "host": "portfolio-app-iu9g.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
+  "securityDefinitions": {
+    "oauth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://github.com/login/oauth/authorize",
+      "flow": "implicit",
+      "scopes": {
+        "read_projects": "read projects",
+        "write_projects": "modify projects"
+      }
+    }
+  },
+  "security": {
+    "oauth": {
+      "read_projects": "read projects",
+      "write_projects": "modify projects"
+    }
+  },
   "tags": [
     {
       "name": "Projects",
@@ -86,6 +100,9 @@
           "400": {
             "description": "Bad Request"
           }
+        },
+        "security": {
+                  "oauth": ["write_projects"]
         }
       }
     },

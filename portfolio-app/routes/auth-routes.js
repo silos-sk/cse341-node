@@ -2,7 +2,10 @@ const express = require('express');
 const router = express.Router();
 const dotenv = require('dotenv');
 const axios = require('axios');
+const { default: joiToSwagger } = require('joi-to-swagger');
 dotenv.config();
+const jwt = require('jsonwebtoken');
+const { authenticateToken } = require('../middleware/authenticateToken');
 
 // auth login
 router.get('/login', (req, res)=>{
@@ -44,25 +47,5 @@ router.get('/github/redirect', ({ query: { code } }, res) => {
       })
       .catch((err) => res.status(500).json({ err: err.message }));
   });
-
-// my try
-// router.get('/github/redirect', ({ query: { code }}, res) => {
-//     const body = {
-//         client_id: process.env.GITHUB_CLIENT_ID,
-//         client_secret: process.env.GITHUB_SECRET,
-//         code,
-//     };
-//     const opts = { headers: { accept: 'application/json' } };
-//     axios
-//     .post('https://github.com/login/oauth/access_token', body, opts)
-//     .then((_res) => _res.data.access_token)
-//     .then((access_token) => {
-//         // eslint-disable-next-line no-console
-//         console.log('My token:', access_token);
-
-//         // res.redirect(`/?token=${token}`);
-//     })
-//     .catch((err) => res.status(500).json({ err: err.message}))
-// });
 
 module.exports = router;
