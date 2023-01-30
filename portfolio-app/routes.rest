@@ -1,22 +1,22 @@
 // ** LOCALHOST 
-GET http://localhost:8080/
+GET http://localhost:3000/
 
 //** COURSES
 ### GET ALL COURSES
-GET http://localhost:8080/courses
+GET http://localhost:3000/courses
 
 ### GET COURSE BY ID
-GET http://localhost:8080/courses/63c6d01cd1398e8d34f449b3
+GET http://localhost:3000/courses/63c6d01cd1398e8d34f449b3
 
 //** PROJECTS
 ### GET ALL PROJECTS
-GET http://localhost:8080/projects
+GET http://localhost:3000/projects
 
 ### GET PROJECT BY ID
-GET http://localhost:8080/projects/63c6d010d1398e8d34f449a6
+GET http://localhost:3000/projects/63c6d010d1398e8d34f449a6
 
 ### CREATE PROJECT
-POST http://localhost:8080/projects/
+POST http://localhost:3000/projects/
 content-type: application/json
 
 {
@@ -31,7 +31,7 @@ content-type: application/json
 }
 
 ### UPDATE PROJECT
-PUT http://localhost:8080/projects/63cbd46b33e9e7355471d2f1
+PUT http://localhost:3000/projects/63cbd46b33e9e7355471d2f1
 content-type: application/json
 
 {
@@ -47,7 +47,7 @@ content-type: application/json
 
 
 ### DELETE PROJECT
-DELETE http://localhost:8080/projects/63cbd46b33e9e7355471d2f1
+DELETE http://localhost:3000/projects/63cbd46b33e9e7355471d2f1
 
 
 # // ** PRODUCTION DEPLOY **

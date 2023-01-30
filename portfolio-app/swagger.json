@@ -69,10 +69,10 @@
                   "example": "any"
                 },
                 "websiteUrl": {
-                  "example": "any"
+                  "example": "http://www.projectWebsite.com"
                 },
                 "gitHubUrl": {
-                  "example": "any"
+                  "example": "http://www.github.com"
                 },
                 "techStack": {
                   "example": "any"
