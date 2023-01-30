@@ -6,7 +6,12 @@ app.set('view engine', 'ejs')
 displayHome = app.get('/', (req, res) => {
     // const data =
     //   'Portfolio App'
-    res.render('login');
+
+    //GITHUB AUTH HOME
+    // res.render('login');
+
+    // OIDC HOME
+    res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out')
   });
 
 
