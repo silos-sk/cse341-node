@@ -12,7 +12,24 @@ const doc = {
   '@definitions': {
     projectSchema: swagger},
   host: 'portfolio-app-iu9g.onrender.com',
-  schemes: ['https']
+  schemes: ['https'],
+  securityDefinitions: {
+    "oauth": {
+        "type": "oauth2",
+        "authorizationUrl": "https://github.com/login/oauth/authorize",
+        "flow": "implicit",
+        "scopes": {
+            "read_projects": "read projects",
+            "write_projects": "modify projects"
+        }
+    }
+  },
+  security: {
+   "oauth":{
+    "read_projects": "read projects",
+    "write_projects": "modify projects"
+   }
+},
 };
 
 const outputFile = './swagger.json';

@@ -4,6 +4,7 @@ const mongodb = require('./db/connect');
 const dotenv = require('dotenv');
 dotenv.config();
 const authRoutes = require('./routes/auth-routes');
+const jwt = require('jsonwebtoken');
 
 const port = process.env.PORT || 8080;
 const app = express();

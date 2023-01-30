@@ -30,7 +30,6 @@ content-type: application/json
     "imgAlt": "test"
 }
 
-
 ### UPDATE PROJECT
 PUT http://localhost:8080/projects/63cbd46b33e9e7355471d2f1
 content-type: application/json
